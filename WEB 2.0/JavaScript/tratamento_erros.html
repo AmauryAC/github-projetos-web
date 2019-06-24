@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script type="text/javascript">
+
+			/*
+			// Netflix
+			var video = Array();
+
+			video[1] = Array();
+			video[1]['nome'] = 'Fullmetal Alchimist';
+			video[1]['categoria'] = 'Anime';
+
+			function getVideo(video) {
+				// Lógica
+
+				try {
+					console.log(video[0]['nome']);
+				}
+				catch(erro) {
+					tratarErro(erro);
+					console.log('Agora sim podemos tratar esse erro');
+				}
+				finally {
+					console.log('Sempre passa por aqui');
+				}
+
+				console.log('A aplicação não morreu');
+			}
+
+			function tratarErro(e) {
+				// Lógica para registrar o erro no servidor
+				console.log(e);
+			}
+
+			getVideo(video);
+			*/
+
+			try {
+				console.log(divisao(3, 0));
+			}
+			catch(erro) {
+				console.log(erro);
+			}
+
+			function divisao (a, b) {
+				if(b == 0)
+					throw new Error('Não é possível realizar uma divisão por 0. Por favor, tente outro número.');
+
+				return (a / b);
+			}
+
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+
+</html>

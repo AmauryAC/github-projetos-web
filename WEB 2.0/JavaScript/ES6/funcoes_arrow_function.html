@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+		<script type="text/babel">
+			
+			// Função anônima na variável quadrado
+			/*let quadrado = function(x) {
+				return x * x;
+			}*/
+
+			// Arrow function
+			/*let quadrado = (x) => x * x;
+
+			document.write(quadrado(5));*/
+
+			let numero = 7;
+
+			let parOuImpar = numero => numero % 2 == 0 ? 'par' : 'ímpar';
+
+			document.write(`O número ${numero} é ${parOuImpar(numero)}`);
+
+		</script>
+	</head>
+
+	<body>
+
+		<div id="output"></div>
+		
+	</body>
+</html>
